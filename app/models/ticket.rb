@@ -3,6 +3,8 @@ class Ticket < ApplicationRecord
 
   has_one_attached :photo
 
+  # this was our first approach
+
   def text_from_image
     return unless photo.attached?
 
